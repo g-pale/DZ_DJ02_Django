@@ -1,0 +1,14 @@
+<nav class="nav nav-pills flex-column">
+    <a href="{% url 'home' %}" class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+        Главная страница
+    </a>
+    <a href="{% url 'second' %}" class="nav-link {% if request.resolver_match.url_name == 'second' %}active{% endif %}">
+        Flask и Django: в чём разница
+    </a>
+    <a href="{% url 'third' %}" class="nav-link {% if request.resolver_match.url_name == 'third' %}active{% endif %}">
+        Шаблоны и наследование в Django
+    </a>
+    <a href="{% url 'fourth' %}" class="nav-link {% if request.resolver_match.url_name == 'fourth' %}active{% endif %}">
+        Завершение учебного проекта на Django
+    </a>
+</nav>
